@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aimwebs</title>
+  <link rel="stylesheet" href="tt10.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <!-- Main Menu setup -->
+    <div class="main-menu">
+        <h1>Aimwebs</h1>
+        <button id="">B1</button>
+        <button id="game-mode-btn">Select a Game Mode</button>e
+        <button id="option-btn">Options</button>
+        <button id="setting-btn">Settings</button>
+    </div>
+
+    <!-- Window setup -->
+     <!-- Game Modes -->
+    <div class="game-mode-wdw" id="game-mode-wdw">
+        <h2>Choose a Game Mode</h2>
+        <div class="game-mode-item">
+            <span class="game-mode-txt">1st Game Mode</span>
+            <button class="game-mode-button" id="game-mode-1-btn">Select</button>
+        </div>
+        <div class="game-mode-item">
+            <span class="game-mode-txt">2nd Game Mode</span>
+            <button class="game-mode-button" id="game-mode-2-btn">Select</button>
+        </div>
+        <button id="close-game-mode-wdw">Back</button>
+        <button id="play-game-mode">Play</button>
+    </div>
+     <!-- Game Options -->
+    <div class="option-wdw" id="option-wdw">
+        <h2>Options</h2>
+        <div class="option-item">
+            <span class="option-txt">Game Difficulty</span>
+            <button class="option-button" id="option-1-btn">Easy</button><!--configure in main.js-->
+        </div>
+        <div class="option-item">
+            <span class="option-txt">Opt 2</span>
+            <button class="option-button" id="option-2-btn">Button</button><!--configure in main.js-->
+        </div>
+        <button id="close-option-wdw">Back</button>
+    </div>
+     <!-- Settings -->
+    <div class="setting-wdw" id="setting-wdw">
+        <h2>Settings</h2>
+        <div class="setting-item">
+            <span class="setting-txt">S1</span>
+            <button class="setting-button" id="setting-1-btn">...</button>
+        </div>
+        <div class="setting-item">
+            <span class="setting-txt">S2</span>
+            <button class="setting-button" id="setting-2-btn">...</button>
+        </div>
+        <div class="setting-item">
+            <span class="setting-txt">Sensitivity</span>
+            <button class="setting-button" id="setting-3-btn">Button</button>
+        </div>
+            <div class="sensitivity-wdw" id="sensitivity-wdw">
+                <h2>Sensitivity</h2>
+                <div class="sensitivity-item">
+                    <span class="sensitivity-txt">Set up your Sensitivity</span>
+                    <input type="range" id="sensitivity-1-range" min="0.001" max="1" step="0.001" value="0.5">
+                    <input type="number" id="sensitivity-1-number" min="0.001" max="1" step="0.001" value="0.5">
+                </div>
+                <button id="close-sensitivity-wdw">Back</button>
+            </div>
+        <div class="setting-item">
+            <span class="setting-txt">S4</span>
+            <button class="setting-button" id="setting-4-btn">...</button>
+        </div>
+        <button id="close-setting-wdw">Back</button>
+    </div>
+
+    
+    <script src="tt10.js"></script>
+</body>
+</html>
